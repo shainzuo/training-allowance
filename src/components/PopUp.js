@@ -29,7 +29,7 @@ export default function Popup() {
                             </h3>
                             <div className="mt-2">
                             <p className="text-sm text-gray-500">
-                            Thanks for your submission. You will receive your allowance soon. 
+                            Thanks for your submission. You will receive your funding soon. 
                             </p>
                             </div>
                         </div>
