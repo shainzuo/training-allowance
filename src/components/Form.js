@@ -33,7 +33,7 @@ export default function Form()  {
             .catch((error) => {
                 console.log(error);
             });
-        setForm({ pop: true, name : '', bvn: '', phone_no: '', email: '', bank: '', account: '',  })
+        setForm({ pop: true, name : '', svn: '', phone_no: '', email: '', doe: '', yis: '',  })
     }
 
     return (
