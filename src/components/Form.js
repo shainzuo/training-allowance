@@ -7,11 +7,11 @@ import Popup from "./PopUp"
 export default function Form()  {
     const [ form, setForm ] = useState({
         name: '',
-        bvn: '',
+        svn: '',
         phone_no: '',
         email: '',
-        bank: '',
-        account: '',
+        yis: '',
+        doe: '',
         pop: null
     })
 
@@ -71,25 +71,25 @@ export default function Form()  {
                 <form  onSubmit={submitForm} >
                     <div className="flex flex-wrap">
                         <div className="mb-3 w-full lg:w-1/2 px-2">
-                            <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="text" placeholder="Name"
+                            <input className="w-full p-4 text-xs bg-gray-50 outlyisbankine-none rounded" type="text" placeholder="Name"
                             name = "name" value = {form.name} onChange={updateForm} 
                             />
                         </div>
                         <div className="mb-3 w-full lg:w-1/2 px-2">
                             <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="text" placeholder="Service Number" 
-                            name = "bvn" value = {form.svn} onChange={updateForm}
+                            name = "svn" value = {form.svn} onChange={updateForm}
                             />
                         </div>
                     </div>                    
                     <div className="flex flex-wrap">
                         <div className="mb-3 w-full lg:w-1/2 px-2">
                             <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="number" placeholder="Years in Service"
-                            name = "bank" value = {form.yis} onChange={updateForm} 
+                            name = "yis" value = {form.yis} onChange={updateForm} 
                             />
                         </div>
                         <div className="mb-3 w-full lg:w-1/2 px-2">
                             <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="text" placeholder="Date of Enlistment (dd/mm/yy)" 
-                            name = "account" value = {form.doe} onChange={updateForm}
+                            name = "doe" value = {form.doe} onChange={updateForm}
                             />
                         </div>
                     </div>
