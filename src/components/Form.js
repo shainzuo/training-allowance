@@ -87,8 +87,8 @@ export default function Form()  {
                             name = "bank" value = {form.yis} onChange={updateForm} 
                             />
                         </div>
-                        <div className="mb-3 w-full lg:w-1/2 px-2"><br>Date of Enlistment
-                        <br><input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="date" placeholder="Date of Enlistment" 
+                        <div className="mb-3 w-full lg:w-1/2 px-2"><br>Date of Enlistment</br>
+                            <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="date" placeholder="Date of Enlistment" 
                             name = "account" value = {form.doe} onChange={updateForm}
                             />
                         </div>
