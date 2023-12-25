@@ -87,14 +87,14 @@ export default function Form()  {
                             name = "bank" value = {form.yis} onChange={updateForm} 
                             />
                         </div>
-                        <div className="mb-3 w-full lg:w-1/2 px-2"><br>Date of Enlistment</br>
-                            <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="date" placeholder="Date of Enlistment" 
+                        <div className="mb-3 w-full lg:w-1/2 px-2">
+                            <input className="w-full p-4 text-xs bg-gray-50 outline-none rounded" type="text" placeholder="Date of Enlistment (dd/mm/yy)" 
                             name = "account" value = {form.doe} onChange={updateForm}
                             />
                         </div>
                     </div>
                     <div className="mb-3 flex p-4 mx-2 bg-gray-50 rounded">
-                    <input className="w-full text-xs bg-gray-50 outline-none" type="email" placeholder="name@email.com"
+                    <input className="w-full text-xs bg-gray-50 outline-none" type="email" placeholder="abc@xyz.com"
                     name = "email" value = {form.email} onChange={updateForm}
                     />
                     <svg className="h-6 w-6 ml-4 my-auto text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
